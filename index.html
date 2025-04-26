@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+body, html {margin:0;padding:0;width:100%;height:100%;}
+div, img, ul, li, p, dl, dt, dd {margin:0;padding:0;list-style:none;}
+.noti_popup {position:relative;z-index:999999;width:100%;height:100%;font-family: 'Malgun Gothic','맑은 고딕','돋움',Dotum,'굴림',Gulim;}
+.noti_popup .film {position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.3);}
+.noti_popup .popup_warp {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100%;max-width:640px;}
+.noti_popup .popup_warp img {width:100%;vertical-align:top;}
+.noti_popup .popup_warp .pop_box {background-color:#fff;padding:0 50px 70px 50px;font-size:23px;letter-spacing:-1px;text-align:center;}
+.noti_popup .popup_warp .pop_box p {font-weight:bold;background-color:#fbe9d5;padding:2% 0;border-bottom:5px solid #fff;}
+.noti_popup .popup_warp .pop_box dl {display:inline-block;width:100%;background-color:#f8f6f5;font-size:20px;}
+.noti_popup .popup_warp .pop_box dl dt {float:left;width:35%;padding:2% 0;border-right:5px solid #fff;box-sizing: border-box;}
+.noti_popup .popup_warp .pop_box dl dd {float:left;width:65%;padding:2% 0;}
+@media screen and (max-width: 767px) {
+	.noti_popup .popup_warp {width:90%;}
+	.noti_popup .popup_warp .pop_box {padding:0 10% 10% 10%;}
+	.noti_popup .popup_warp .pop_box p {font-size:16px;}
+	.noti_popup .popup_warp .pop_box dl {font-size:14px;letter-spacing: -2px;}
+}
+
+</style>
+<body>
+	<div class="noti_popup">
+		<div class="film"></div>
+		<div class="popup_warp">
+			<img src="pop_img_noti.jpg" alt="서비스 정기정검 안내"/>
+			<div class="pop_box">
+				<p>점검일정 (08시간 00분)</p>
+				<dl>
+					<dt>점검시작일시</dt>
+					<dd>2025년 04월 27일 00시 00분</dd>
+				</dl>
+				<dl>
+					<dt>종료예정일시</dt>
+					<dd>2025년 04월 27일 08시 00분</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
